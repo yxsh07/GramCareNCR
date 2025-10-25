@@ -1,0 +1,1 @@
+export type Page = 'home' | 'blood-checkup' | 'about-us' | 'medicine' | 'doctors-appointment';
