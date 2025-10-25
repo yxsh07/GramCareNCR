@@ -1,33 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# github.com/yxsh07 
 
-# Run and deploy your AI Studio app
+# GramCare NCR
 
-This contains everything you need to run your app locally.
+**Empowering Rural and Urban Communities through Care, Innovation, and Sustainable Development**
 
-View your app in AI Studio: https://ai.studio/apps/drive/10DhkyNii_y3n2gLMkd-awaUDQf_SoN-0
+---
 
-## Run Locally
+## 🏠 Overview
 
-**Prerequisites:**  Node.js
+**GramCare NCR** is a student-led initiative dedicated to improving the lives of villagers and rural communities across the NCR region.  
+Our mission is to create **smart, healthy, and self-reliant villages** by providing essential services, healthcare access, and support through innovation and collaboration.
 
+This is a **prototype website** built to demonstrate the structure and functionality of the GramCare platform.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
 
-## Dev notes — image fix & troubleshooting
+## 💡 Features
 
-- Problem: Some images (notably the Home hero image) were appearing broken because the project included truncated/invalid base64 data URIs in `assets/images.ts`.
-- Fix applied: a safe placeholder SVG was added at `public/images/hero.svg` and `pages/HomePage.tsx` was updated to use `/images/hero.svg`. Serving the image from `public/` ensures Vite serves it as a normal static asset.
-- How to verify:
-   1. Start the dev server: `npm run dev` (Vite may pick a different port if 3000/3001 are in use). The server will print the actual local URL (for example `http://localhost:3002/`).
-   2. Open the printed URL in the browser and navigate to the Home page. You should see the hero illustration instead of a broken image icon.
-   3. If ports are in use, stop the occupying process or set `PORT=3000` before running: `PORT=3000 npm run dev` (bash).
+### 🛒 Medicine (E-Commerce)
+- A simple medicine shopping prototype.
+- Displays a list of medicines with names, prices, and images.
+- Users can click **Buy Now** to add delivery details.
+- All orders are recorded in an **Excel file** (simulating a backend database).
+- **Payment Mode:** Cash on Delivery only.
 
-- Next steps (optional):
-   - Replace `public/images/hero.svg` with a real JPEG/PNG at `public/images/hero.jpg` and update `pages/HomePage.tsx` accordingly, or import images from `assets/` so Vite bundles them.
-   - Remove unused base64 placeholders from `assets/images.ts` or replace them with valid base64 strings if you want to keep that approach.
+### 🩸 Blood Checkup Booking
+- Allows users to book a blood checkup appointment.
+- Users fill in details like name, contact, and address.
+- Appointment details are saved in an **Excel sheet** for records.
+
+### 🧑‍🤝‍🧑 About Us
+- Information about GramCare’s mission, vision, and values.
+- Contact details for inquiries and collaboration.
+
+---
+
+## 📁 Project Structure
+
