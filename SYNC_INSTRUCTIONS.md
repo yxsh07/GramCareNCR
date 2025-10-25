@@ -14,6 +14,16 @@ The workflow runs automatically when:
 
 ### Manual Trigger
 
+**First Time Setup:** The workflow requires one-time approval since it has write permissions. To approve:
+
+1. Go to the repository on GitHub
+2. Click on "Actions" tab
+3. You should see a pending workflow run that requires approval
+4. Click "Review deployments" or "Approve and run" button
+5. Approve the workflow to run
+
+**Subsequent Runs:**
+
 1. Go to the repository on GitHub
 2. Click on "Actions" tab
 3. Select "Sync Main to GH Pages" workflow
