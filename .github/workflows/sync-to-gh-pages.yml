@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - copilot/copy-files-to-gh-pages  # For testing
 
 permissions:
   contents: write
